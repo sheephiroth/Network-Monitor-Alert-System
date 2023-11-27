@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DEF3F8"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Server : "
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/tv_servername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/text1"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Host : "
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/tv_servername"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/tv_hostname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="456"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/text3"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_servername"
+        android:layout_marginTop="3dp"
+        android:text="asdsaqdasdasdasdasdasdasdasdasdasdasd"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_detail"
+        android:layout_marginTop="3dp"
+        android:text="Severity : "
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_severity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_detail"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/text2"
+        android:text="severity"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_detail"
+        android:layout_marginTop="3dp"
+        android:text="datetime"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+</RelativeLayout>

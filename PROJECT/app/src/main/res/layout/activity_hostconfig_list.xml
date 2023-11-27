@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:scrollbars="vertical"
+    android:background="#F5F2FB"
+    tools:context=".Hostconfig_list">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back" />
+
+
+
+    <TextView
+        android:id="@+id/tv_hostname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/back"
+        android:text="Host Config"
+        android:textColor="#004AAD"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/back"
+        android:layout_marginTop="15dp"
+        android:background="#CBD1D2" />
+
+
+
+    <EditText
+        android:id="@+id/edt_commu"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Community Name"
+        android:inputType="text"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edt_oid"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="OID"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/edt_commu"
+        />
+
+    <EditText
+        android:id="@+id/edt_valtype"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Value Type (String: s, Int: i )"
+        android:inputType="text"
+        android:layout_below="@id/edt_oid"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edt_newValue"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Value"
+        android:inputType="text"
+        android:layout_below="@id/edt_valtype"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Update"
+        android:textColor="#FFF"
+        android:background="#000"
+        android:layout_below="@id/cancelbtn"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CANCEL"
+        android:textColor="#FFF"
+        android:background="#FF0000"
+        android:layout_below="@id/edt_newValue"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

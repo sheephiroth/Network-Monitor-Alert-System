@@ -1,0 +1,106 @@
+{
+    "sysmapid": "3",
+    "name": "test",
+    "width": "1220",
+    "height": "600",
+    "backgroundid": "0",
+    "label_type": "0",
+    "label_location": "0",
+    "highlight": "0",
+    "expandproblem": "1",
+    "markelements": "0",
+    "show_unack": "0",
+    "grid_size": "50",
+    "grid_show": "1",
+    "grid_align": "1",
+    "label_format": "0",
+    "label_type_host": "2",
+    "label_type_hostgroup": "2",
+    "label_type_trigger": "2",
+    "label_type_map": "2",
+    "label_type_image": "2",
+    "label_string_host": "",
+    "label_string_hostgroup": "",
+    "label_string_trigger": "",
+    "label_string_map": "",
+    "label_string_image": "",
+    "iconmapid": "0",
+    "expand_macros": "1",
+    "severity_min": "0",
+    "userid": "1",
+    "private": "1",
+    "show_suppressed": "0",
+    "selements": [
+        {
+            "selementid": "8",
+            "sysmapid": "3",
+            "elementtype": "0",
+            "iconid_off": "185",
+            "iconid_on": "0",
+            "label": "New element",
+            "label_location": "-1",
+            "x": "461",
+            "y": "211",
+            "iconid_disabled": "0",
+            "iconid_maintenance": "0",
+            "elementsubtype": "0",
+            "areatype": "0",
+            "width": "200",
+            "height": "200",
+            "viewtype": "0",
+            "use_iconmap": "0",
+            "evaltype": "0",
+            "elements": [
+                {
+                    "hostid": "10084"
+                }
+            ],
+            "urls": [],
+            "tags": [],
+            "permission": 2
+        },
+        {
+            "selementid": "9",
+            "sysmapid": "3",
+            "elementtype": "0",
+            "iconid_off": "69",
+            "iconid_on": "0",
+            "label": "New element",
+            "label_location": "-1",
+            "x": "743",
+            "y": "195",
+            "iconid_disabled": "0",
+            "iconid_maintenance": "0",
+            "elementsubtype": "0",
+            "areatype": "0",
+            "width": "200",
+            "height": "200",
+            "viewtype": "0",
+            "use_iconmap": "0",
+            "evaltype": "0",
+            "elements": [
+                {
+                    "hostid": "10562"
+                }
+            ],
+            "urls": [],
+            "tags": [],
+            "permission": 2
+        }
+    ],
+    "shapes": [],
+    "lines": [],
+    "links": [
+        {
+            "linkid": "8",
+            "sysmapid": "3",
+            "selementid1": "8",
+            "selementid2": "9",
+            "drawtype": "0",
+            "color": "00CC00",
+            "label": "",
+            "linktriggers": [],
+            "permission": 2
+        }
+    ]
+}

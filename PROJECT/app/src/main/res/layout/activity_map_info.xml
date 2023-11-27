@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:scrollbars="vertical"
+    android:background="#F5F2FB"
+    android:orientation="horizontal"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"/>
+
+    <TextView
+        android:id="@+id/map_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/back"
+        android:text="mapname"
+        android:textColor="#004AAD"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sen1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/back"
+        android:layout_marginTop="13dp"
+        android:background="#CBD1D2" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:layout_below="@id/sen1"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/loading"
+        ></ImageView>
+
+
+</RelativeLayout>

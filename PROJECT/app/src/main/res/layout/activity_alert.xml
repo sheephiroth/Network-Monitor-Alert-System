@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:scrollbars="vertical"
+    android:background="#F5F2FB"
+    tools:context=".Alert">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:background="@drawable/logotest1"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/menu"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/hamberger" />
+
+    <TextView
+        android:id="@+id/serverbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:text="Server"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="110dp"
+        android:text="Alert"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/serverbtn"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/alertbtn"
+        android:layout_marginLeft="241dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/serverbtn"
+        android:layout_marginTop="20dp"
+        android:background="#CBD1D2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alertlist"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/serverbtn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

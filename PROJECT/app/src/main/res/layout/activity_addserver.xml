@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:scrollbars="vertical"
+    android:background="#F5F2FB"
+    tools:context=".Addserver">
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/back"
+        android:text="Add Server"
+        android:textColor="#004AAD"
+        android:id="@+id/Add_server"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:text="Save"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/back"
+        android:layout_marginTop="10dp"
+        android:background="#CBD1D2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Add_server"
+        android:layout_marginTop="15dp"
+        android:background="#CBD1D2"
+        android:id="@+id/sen1" />
+
+
+    <TextView
+        android:id="@+id/Zabbix_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Add_server"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:text="Zabbix Name"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Zabbix_Name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Server Name"
+        android:inputType="textShortMessage" />
+
+    <TextView
+        android:id="@+id/Zabbix_Url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zabbix Url"
+        android:textSize="20sp"
+        android:gravity="right"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/edt_name"/>
+
+    <EditText
+        android:id="@+id/edt_url"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Zabbix_Url"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="http(s)://your_zabbix_url/zabbix"
+        android:inputType="textShortMessage" />
+
+
+    <TextView
+        android:id="@+id/Zabbix_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zabbix User"
+        android:textSize="20sp"
+        android:gravity="right"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/edt_url"/>
+
+    <EditText
+        android:id="@+id/edt_user"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Zabbix_User"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Admin"
+        android:inputType="textShortMessage" />
+
+    <TextView
+        android:id="@+id/Zabbix_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zabbix Password"
+        android:textSize="20sp"
+        android:gravity="right"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/edt_user"/>
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Zabbix_Password"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

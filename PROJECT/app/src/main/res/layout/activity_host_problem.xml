@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:scrollbars="vertical"
+    android:background="#F5F2FB"
+    tools:context=".Host_problem">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"/>
+
+    <TextView
+        android:id="@+id/tv_hostname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/back"
+        android:text="R1 Problems"
+        android:textColor="#004AAD"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/back"
+        android:layout_marginTop="15dp"
+        android:background="#CBD1D2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hostproblemlist"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/back"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:scrollbars="vertical" />
+
+
+
+</RelativeLayout>

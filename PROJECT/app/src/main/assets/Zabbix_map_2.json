@@ -1,0 +1,145 @@
+{
+    "sysmapid": "2",
+    "name": "222",
+    "width": "800",
+    "height": "600",
+    "backgroundid": "0",
+    "label_type": "0",
+    "label_location": "0",
+    "highlight": "0",
+    "expandproblem": "1",
+    "markelements": "0",
+    "show_unack": "0",
+    "grid_size": "50",
+    "grid_show": "1",
+    "grid_align": "1",
+    "label_format": "0",
+    "label_type_host": "2",
+    "label_type_hostgroup": "2",
+    "label_type_trigger": "2",
+    "label_type_map": "2",
+    "label_type_image": "2",
+    "label_string_host": "",
+    "label_string_hostgroup": "",
+    "label_string_trigger": "",
+    "label_string_map": "",
+    "label_string_image": "",
+    "iconmapid": "0",
+    "expand_macros": "1",
+    "severity_min": "0",
+    "userid": "1",
+    "private": "1",
+    "show_suppressed": "0",
+    "selements": [
+        {
+            "selementid": "5",
+            "sysmapid": "2",
+            "elementtype": "0",
+            "iconid_off": "125",
+            "iconid_on": "0",
+            "label": "R2",
+            "label_location": "-1",
+            "x": "593",
+            "y": "195",
+            "iconid_disabled": "0",
+            "iconid_maintenance": "0",
+            "elementsubtype": "0",
+            "areatype": "0",
+            "width": "200",
+            "height": "200",
+            "viewtype": "0",
+            "use_iconmap": "0",
+            "evaltype": "0",
+            "elements": [
+                {
+                    "hostid": "10561"
+                }
+            ],
+            "urls": [],
+            "tags": [],
+            "permission": 2
+        },
+        {
+            "selementid": "6",
+            "sysmapid": "2",
+            "elementtype": "0",
+            "iconid_off": "187",
+            "iconid_on": "0",
+            "label": "Zabbix Server",
+            "label_location": "-1",
+            "x": "377",
+            "y": "215",
+            "iconid_disabled": "0",
+            "iconid_maintenance": "0",
+            "elementsubtype": "0",
+            "areatype": "0",
+            "width": "200",
+            "height": "200",
+            "viewtype": "0",
+            "use_iconmap": "0",
+            "evaltype": "0",
+            "elements": [
+                {
+                    "hostid": "10084"
+                }
+            ],
+            "urls": [],
+            "tags": [],
+            "permission": 2
+        },
+        {
+            "selementid": "7",
+            "sysmapid": "2",
+            "elementtype": "0",
+            "iconid_off": "69",
+            "iconid_on": "0",
+            "label": "win10",
+            "label_location": "-1",
+            "x": "143",
+            "y": "195",
+            "iconid_disabled": "0",
+            "iconid_maintenance": "0",
+            "elementsubtype": "0",
+            "areatype": "0",
+            "width": "200",
+            "height": "200",
+            "viewtype": "0",
+            "use_iconmap": "0",
+            "evaltype": "0",
+            "elements": [
+                {
+                    "hostid": "10562"
+                }
+            ],
+            "urls": [],
+            "tags": [],
+            "permission": 2
+        }
+    ],
+    "shapes": [],
+    "lines": [],
+    "links": [
+        {
+            "linkid": "6",
+            "sysmapid": "2",
+            "selementid1": "7",
+            "selementid2": "6",
+            "drawtype": "0",
+            "color": "00CC00",
+            "label": "",
+            "linktriggers": [],
+            "permission": 2
+        },
+        {
+            "linkid": "7",
+            "sysmapid": "2",
+            "selementid1": "6",
+            "selementid2": "5",
+            "drawtype": "0",
+            "color": "00CC00",
+            "label": "",
+            "linktriggers": [],
+            "permission": 2
+        }
+    ]
+}

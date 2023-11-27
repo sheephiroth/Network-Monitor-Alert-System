@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PROJECT"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Add_RiskAlert"
+            android:exported="false" />
+        <activity
+            android:name=".Risk_alert_config"
+            android:exported="false" />
+        <activity
+            android:name=".Dashbroad"
+            android:exported="false" />
+        <activity
+            android:name=".Map_info"
+            android:exported="false" />
+        <activity
+            android:name=".Server_maps"
+            android:exported="false" />
+        <activity
+            android:name=".DiscoveryDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Server_Discovery"
+            android:exported="false" />
+        <activity
+            android:name=".SNMP_2_ipforwarding"
+            android:exported="false" />
+        <activity
+            android:name=".SNMP_1_edtname"
+            android:exported="false" />
+        <activity
+            android:name=".Hostconfig_list"
+            android:exported="false" />
+        <activity
+            android:name=".Graph_Normal_1"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Graph_Pie"
+            android:exported="false" />
+        <activity
+            android:name=".Host_risk"
+            android:exported="false" />
+        <activity
+            android:name=".Addserver"
+            android:exported="false" />
+        <activity
+            android:name=".Alert"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Graph_info"
+            android:exported="false" />
+        <activity
+            android:name=".Server_problems"
+            android:exported="false" />
+        <activity
+            android:name=".Host_lasted_data"
+            android:exported="false" />
+        <activity
+            android:name=".Host_graph"
+            android:exported="false" />
+        <activity
+            android:name=".Host_problem"
+            android:exported="false" />
+        <activity
+            android:name=".Problems"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Host_info"
+            android:exported="false" />
+        <activity
+            android:name=".History"
+            android:exported="false" />
+        <activity
+            android:name=".Server_detail"
+            android:exported="false" />
+        <activity
+            android:name=".Editserver"
+            android:exported="false" />
+
+        <service
+            android:name=".RiskService"
+            android:exported="false" />
+    </application>
+
+</manifest>

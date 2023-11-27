@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:scrollbars="vertical"
+    android:background="#F5F2FB"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:background="@drawable/logotest1" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/hamberger" />
+
+
+    <TextView
+        android:id="@+id/serverbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="60dp"
+        android:text="Server"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/serverbtn"
+        android:text="Alert"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="72dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/serverbtn"
+        android:layout_marginLeft="60dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/serverbtn"
+        android:layout_marginTop="20dp"
+        android:background="#CBD1D2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/serverlist"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/serverbtn"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:scrollbars="vertical" />
+
+    <ImageView
+        android:id="@+id/addserver"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/addtest" />
+
+</RelativeLayout>
